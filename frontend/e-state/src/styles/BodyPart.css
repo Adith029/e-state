@@ -1,0 +1,174 @@
+.discover {
+    font-size: 50px;
+    font-weight: 700;
+    color: black;
+    text-align: left;
+}
+
+.discoverDiv {
+    position: absolute;
+    top: 35%;
+    left: 23%;
+}
+
+.house1 {
+    position: absolute;
+    top: 20%;
+    right: 21%;
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.house1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+}
+
+.discoverPara {
+    text-align: start;
+    font-size: smaller;
+    position: absolute;
+    top: 60%;
+    left: 23%;
+    transform: translateY(-50%);
+}
+
+.makeInquiry {
+    width: 180px;
+    margin-top: 20px;
+    border-radius: 0;
+}
+
+.search {
+    margin: auto;
+    width: 1200px;
+    height: 100px;
+    background-color: white;
+    position: relative;
+    top: 730px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+    border: 0;
+    display: inline-flex;
+    justify-content: space-evenly; /* Distributes space equally */
+    align-items: center; /* Centers items vertically */
+    padding: 0 20px; /* Adds some padding to the container */
+}
+
+.searchInput {
+    margin: 0 10px; /* Optional: space around each dropdown */
+    padding: 8px;
+    height: 50px;
+    font-size: 16px;
+    width: 200px;
+    border: 1px solid #7C8893;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.searchInput:hover {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.searchButton {
+    height: 50px;
+    padding: 10px;
+    width: 120px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+.searchButton:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 1200px) {
+    .discover {
+        font-size: 40px;
+    }
+    .house1 {
+        top: 20%;
+        right: 5%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    .discover {
+        font-size: 35px;
+    }
+    .discoverDiv {
+        top: 15%;
+        left: 5%;
+    }
+    .house1 {
+        top: 25%;
+        right: 5%;
+        max-width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .discover {
+        font-size: 30px;
+    }
+    .discoverDiv {
+        top: 15%;
+        left: 5%;
+    }
+    .discoverPara {
+        top: 60%;
+    }
+    .house1 {
+        top: 30%;
+        right: 5%;
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .discover {
+        font-size: 25px;
+    }
+    .discoverDiv {
+        top: 10%;
+        left: 5%;
+    }
+    .discoverPara {
+        top: 65%;
+    }
+    .house1 {
+        top: 35%;
+        right: 5%;
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    .discover {
+        font-size: 20px;
+    }
+    .discoverDiv {
+        top: 10%;
+        left: 5%;
+    }
+    .discoverPara {
+        top: 70%;
+    }
+    .house1 {
+        top: 40%;
+        right: 5%;
+        max-width: 90%;
+    }
+}

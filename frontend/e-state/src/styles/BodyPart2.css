@@ -1,0 +1,32 @@
+.bodypart2image{
+    position: absolute;
+    height: 500px;
+    width: 400px;
+    top: 1080px;
+    left: 440px;
+}
+.aboutUs{
+    position: absolute;
+    top: 1100px;
+    left: 900px; 
+}
+.modernHouse {
+    display: flex;
+    align-items: center; /* Aligns items vertically */
+    gap: 40px;
+  }
+  
+  .apartmentCard {
+    display: flex;
+    flex-direction: column; /* Aligns children vertically */
+    align-items: flex-start; /* Aligns text to the left */
+    text-align: left;
+  }
+  
+  .cardDescription {
+    font-size: 12px;
+    color: #7C8893;
+    margin-top: -10px;
+  }
+
+  
