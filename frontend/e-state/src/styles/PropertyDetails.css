@@ -34,21 +34,21 @@
     border-radius: 5px;
 }
 
-.new-property-details {
+.new-property-pro-details {
     position: absolute;
     top: 250px;
     left: 1100px;
 }
 
-.new-property-details h1 {
+.new-property-pro-details h1 {
     text-align: start;
     color: #0061E0;
 }
 
-.new-property-details hr {
+.new-property-pro-details hr {
     border-top: 2px solid #0061E0;
 }
-.new-property-details h4{
+.new-property-pro-details h4{
     font-weight: bold;
     
 }
@@ -57,18 +57,18 @@
     text-align: left;
 }
 
-.new-property-details h5 {
+.new-property-pro-details h5 {
     margin-top: 20px;
 }
 
-.new-property-details p {
+.new-property-pro-details p {
     font-size: 16px;
     margin: 0px 0;
     display: flex;
     align-items: center;
 }
 
-.new-property-details p svg {
+.new-property-pro-details p svg {
     margin-right: 0px;
 }
 

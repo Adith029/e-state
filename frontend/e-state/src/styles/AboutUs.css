@@ -1,0 +1,80 @@
+.aboutUs-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.aboutUs-header {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.aboutUs-descriptionContainer {
+  text-align: left;
+  max-width: 800px; 
+  margin: 0 auto; 
+  padding: 20px; 
+}
+
+.aboutUs-description {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.aboutUs-values {
+  margin-bottom: 30px;
+}
+
+.aboutUs-subheader {
+  font-size: 2em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.aboutUs-valuesList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutUs-valueItem {
+  margin: 0 15px;
+  text-align: center;
+}
+
+.aboutUs-valueImage {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.aboutUs-team {
+  margin-bottom: 30px;
+}
+
+.aboutUs-teamMembers {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutUs-teamMember {
+  margin: 0 15px;
+  text-align: center;
+}
+
+.aboutUs-teamImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.aboutUs-teamName {
+  font-weight: bold;
+}
+
+.aboutUs-teamRole {
+  color: gray;
+}

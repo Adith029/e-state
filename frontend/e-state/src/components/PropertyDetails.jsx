@@ -36,7 +36,7 @@ function PropertyDetails() {
             ))}
           </div>
         </div>
-        <div className="col-md-4 new-property-details">
+        <div className="col-md-4 new-property-pro-details">
             <h1>$32,000 / Year <span style={{backgroundColor:'orange',color:'white', fontSize:'16px'}}>For Rent</span></h1>
             <h3>Doane Street, Fremont CA 94538</h3>
             <hr />

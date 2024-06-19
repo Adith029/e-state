@@ -4,6 +4,7 @@ import '../styles/BodyPart2.css'
 import { PiBuildingApartmentThin } from "react-icons/pi";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { VscWorkspaceTrusted } from "react-icons/vsc";
+import { Link } from 'react-router-dom';
 
 function BodyPart2() {
   return (
@@ -26,10 +27,8 @@ function BodyPart2() {
         <p className='cardDescription'>Connect with Trusted Real-Estate <br /> Agents and Brokers!</p>
       </div>
     </div>
-    <p style={{textAlign:'left',marginTop:'20px',marginBottom:'30px',color:'#007bff'}}><FaArrowRightLong color='007bff'/> Learn more</p>
-
+   <Link to={'/about'} > <p style={{textAlign:'left',marginTop:'20px',marginBottom:'30px',color:'#007bff'}}><FaArrowRightLong color='007bff'/> Learn more</p></Link>  
         </div>
-        
     </div>
   )
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/Footer.css'
+import { Link } from 'react-router-dom'
 
 function Footer() {
   return (
@@ -8,8 +9,7 @@ function Footer() {
         <h2 className="newsletter-title">Join Our Newsletter Now</h2>
         <p className="newsletter-subtitle">Register now to get updates on promotions...</p>
         <div className="newsletter-input">
-          <input type="email" placeholder="Enter Your Email To Subscribe..." />
-          <button>SUBSCRIBE</button>
+        <Link to={'/contact'}>  <button>SUBSCRIBE</button> </Link>
         </div>
       </div>
 

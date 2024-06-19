@@ -7,6 +7,9 @@ import { IoIosNotificationsOutline } from "react-icons/io";
 import { CiSettings } from "react-icons/ci";
 import { Button } from 'react-bootstrap';
 import { IoIosLogOut } from "react-icons/io";
+import { Link } from 'react-router-dom';
+import FavoriteProperties from './FavoriteProperties';
+import Profile from './Profile';
 
 function UserDashboard() {
     const [activeLink, setActiveLink] = useState('Dashboard');
@@ -23,22 +26,13 @@ function UserDashboard() {
           <h5>Indica Watson</h5>    
         </div>
         <ul className="nav flex-column justify-self-center">
-        <li className="sidebar-elements">
-  <a
-    className={`sidebar-link ${activeLink === 'Dashboard' ? 'active' : ''}`}
-    href="#"
-    onClick={() => handleSetActiveLink('Dashboard')}
-  >
-    <MdDashboard /> Dashboard
-  </a>
-</li>
             <li className=" sidebar-elements">
               <a
-                className={`sidebar-link ${activeLink === 'Discover' ? 'active' : ''}`}
+                className={`sidebar-link ${activeLink === 'favorites' ? 'active' : ''}`}
                 href="#"
-                onClick={() => handleSetActiveLink('Discover')}
+                onClick={() => handleSetActiveLink('favorites')}
               >
-                <BsFillHouseFill /> Discover
+                <BsFillHouseFill /> Favorites
               </a>
             </li>
             <li className=" sidebar-elements">
@@ -50,20 +44,11 @@ function UserDashboard() {
                 <FiMessageSquare /> Inbox <span className="badge badge-primary">3</span>
               </a>
             </li>
-            <li className=" sidebar-elements">
+              <li className=" sidebar-elements">
               <a
-                className={`sidebar-link ${activeLink === 'Notifications' ? 'active' : ''}`}
+                className={`sidebar-link ${activeLink === 'profile' ? 'active' : ''}`}
                 href="#"
-                onClick={() => handleSetActiveLink('Notifications')}
-              >
-                <IoIosNotificationsOutline /> Notifications <span className="badge badge-primary">5</span>
-              </a>
-            </li>
-            <li className=" sidebar-elements">
-              <a
-                className={`sidebar-link ${activeLink === 'Settings' ? 'active' : ''}`}
-                href="#"
-                onClick={() => handleSetActiveLink('Settings')}
+                onClick={() => handleSetActiveLink('profile')}
               >
                 <CiSettings /> Settings
               </a>
@@ -76,39 +61,9 @@ function UserDashboard() {
           </div>
       </div>
       <div className="col-md-10 content">
-        <div className="header d-flex justify-content-center align-items-center">
-          <h1>249 Results</h1>
-        </div>
-        <div className="filters d-flex justify-content-center align-items-center">
-          <input type="text" className="form-control" placeholder="Search Here..." />
-          <input type="text" className="form-control" placeholder="Price" />
-          <select className="form-control">
-            <option>2-4 Beds</option>
-            <option>1-2 Beds</option>
-            <option>4-6 Beds</option>
-            <option>6+ Beds</option>
-          </select>
-          <select className="form-control">
-            <option>Property Type</option>
-            <option>House</option>
-            <option>Apartment</option>
-            <option>Condo</option>
-            <option>Land</option>
-          </select>
-        </div>
         <div className="property-list">
-        <div className="property-item d-flex">
-              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRbcrj53mGyk-u4JwrIb6z1RBAeCpxR78gfQ&s" alt="Property" className="property-img" />
-              <div className="property-details d-flex flex-column justify-content-between">
-                <div>
-                  <h3>The Stables</h3>
-                  <h1>$9540.99</h1>
-                  <p>Terry Lane, Golden CO 80403</p>
-                  <p>230.5 m² <span className="mx-2">2 🛏️</span> <span>2 🛁</span></p>
-                </div>
-                 </div>
-                 <button className="btn btn-outline-primary align-self-end">View Details</button>
-            </div>
+        {activeLink === 'favorites' && <FavoriteProperties />}
+              {activeLink === 'profile' && <Profile />}
         </div>
       </div>
     </div>

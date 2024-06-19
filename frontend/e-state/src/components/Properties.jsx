@@ -36,7 +36,7 @@ function Properties() {
                             <p>230.5 m² <span className="mx-2">2 🛏️</span> <span>2 🛁</span></p>
                         </div>
                     </div>
-               <Link to={'/properties/details'}>     <button className="btn btn-outline-primary align-self-end">View Details</button></Link>
+               <Link to={'/properties/details'}><button className="btn btn-outline-primary align-self-end">View Details</button></Link>
                 </div>
             </div>
         </div>
