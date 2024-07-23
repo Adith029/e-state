@@ -1,0 +1,101 @@
+/* Properties component styles */
+.new-container-fluid {
+    padding: 20px;
+}
+
+.new-header {
+    margin: 20px 0;
+}
+
+.new-filters {
+    margin-bottom: 20px;
+}
+
+.new-filters .form-control {
+    width: auto;
+    margin-right: 10px;
+}
+
+.new-property-list {
+    margin-top: 20px;
+}
+
+.new-property-item {
+    display: flex;
+    flex-wrap: wrap; /* Use wrap instead of 1 */
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.new-property-img {
+    width: 100%;
+    max-width: 400px; /* Set max width */
+    height: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.new-property-details {
+    flex: 1;
+}
+
+.new-property-details h1 {
+    margin-left: 30px;
+    text-align: left;
+    color: #ff6600;
+}
+
+.new-property-details p, .new-property-details h3 {
+    margin-left: 30px;
+    text-align: left;
+    font-size: 25px;
+}
+
+.new-property-rating {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.new-property-rating span {
+    margin-left: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.new-property-item .btn {
+    width: 300px;
+    border-radius: 0px;
+    height: 55px;
+    margin-top: 30px;
+    align-self: flex-end; /* Align button to the end */
+}
+
+@media (max-width: 768px) {
+    .new-property-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .new-property-details {
+        width: 100%;
+    }
+
+    .new-property-details h1, .new-property-details p, .new-property-details h3 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .new-property-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .new-property-item .btn {
+        width: 100%;
+    }
+}

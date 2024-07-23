@@ -1,0 +1,58 @@
+.done-deal-list {
+    margin-top: 20px;
+}
+
+.done-deal-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.done-deal-img {
+    width: 400px;
+    height: 400px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.done-deal-details {
+    flex: 1;
+    display: block;
+}
+
+.done-deal-details h1 {
+    margin-left: 30px;
+    margin-top: 40px;
+    text-align: left;
+    color: black;
+}
+
+.done-deal-details p, .done-deal-details h3 {
+    margin-left: 30px;
+    text-align: left;
+    font-size: 25px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .done-deal-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .done-deal-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .done-deal-details h1, .done-deal-details p, .done-deal-details h3 {
+        margin-left: 0;
+        text-align: left;
+        font-size: 20px;
+    }
+}
