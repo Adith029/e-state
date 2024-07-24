@@ -79,7 +79,8 @@
   .navbar {
     height: auto; /* Allow height to adjust */
     flex-direction: column; /* Stack items vertically */
-    padding: 10px; /* Add padding for spacing */
+    padding: 10px;
+    color:#ECF2F9 ; /* Add padding for spacing */
   }
 
   .logo-image {

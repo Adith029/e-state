@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../styles/ViewEnquiries.css';
 import ApiRequest from '../lib/ApiRequest';
+import { toast } from 'react-toastify'
 
 function ViewEnquiries() {
   const [enquiries, setEnquiries] = useState([]);

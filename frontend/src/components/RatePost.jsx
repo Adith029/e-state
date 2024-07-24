@@ -39,7 +39,7 @@ const RatePost = ({ postId, token }) => {
             fetchRatings(); // Update the ratings after submission
             setStar(rating); // Update the local state of star to reflect current user rating
         } catch (error) {
-\            toast.error("Error submitting rating.");
+          toast.error("Error submitting rating.");
         }
     };
 

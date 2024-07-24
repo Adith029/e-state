@@ -5,6 +5,8 @@ import ApiRequest from '../lib/ApiRequest';
 import pic from '../Assets/Download Blank Default Pfp Wallpaper _ Wallpapers_com.jpeg';
 import ReactPaginate from 'react-paginate';
 import { FaStar } from 'react-icons/fa'; // Import star icon for ratings
+import { toast } from 'react-toastify'
+
 
 function Properties() {
     const navigate = useNavigate();

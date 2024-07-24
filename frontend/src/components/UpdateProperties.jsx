@@ -3,6 +3,8 @@ import '../styles/UpdateProperties.css';
 import ApiRequest from '../lib/ApiRequest';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
+import { toast } from 'react-toastify'
+
 
 function UpdateProperties() {
   const { id } = useParams(); // Use id from useParams

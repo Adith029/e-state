@@ -25,8 +25,8 @@ function SellerDashboard() {
 
   return (
     <div className="seller-container-fluid">
-      <div className="row">
-        <div className="col-md-2 seller-sidebar bg-light">
+      <div className="row-seller">
+        <div className=" seller-sidebar bg-light">
           <div className="seller-profile text-center">
             <img src={currentUser.photo || pic} alt="Indica Watson" className="rounded-circle seller-profile-img" />
             <h5>{currentUser.name || "Name"}</h5>
@@ -72,7 +72,7 @@ function SellerDashboard() {
           <div className="seller-logout-div">
           </div>
         </div>
-        <div className="col-md-10 seller-content">
+        <div className=" seller-content">
           <div className="seller-property-list">
             {activeLink === 'myProperties' && <PropertyCard />}
             {activeLink === 'profile' && <Profile />}

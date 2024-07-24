@@ -52,7 +52,7 @@ function Chat() {
         ...prev,
         messages: [...prev.messages, res.data]
       }));
-\      e.target.reset();
+    e.target.reset();
 
       if (chat.receiver?._id) {
         socket.emit("sendMessage", {
@@ -72,7 +72,7 @@ function Chat() {
       try {
         await ApiRequest.put(`/chat/read/${chat._id}`);
       } catch (err) {
-        alert(error)
+        alert(err)
 
       }
     };

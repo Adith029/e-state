@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import ApiRequest from '../lib/ApiRequest';
 import pic from '../Assets/Download Blank Default Pfp Wallpaper _ Wallpapers_com.jpeg';
 import { FaStar } from 'react-icons/fa';
+import { toast } from 'react-toastify'
 
 function PropertyCard() {
   const currentUser = useSelector((state) => state.auth.currentUser);

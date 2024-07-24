@@ -1,4 +1,3 @@
-// Profile.js
 import React, { useState } from 'react';
 import '../styles/Profile.css';
 import ApiRequest from '../lib/ApiRequest';
@@ -80,7 +79,7 @@ const Profile = () => {
           <div className="profileHeader">
             <h2>Profile</h2>
           </div>
-          <div style={{ display: 'flex', gap: '400px', justifyContent: 'center' }}>
+          <div className="profileDetails">
             <div style={{ marginTop: '60px' }}>
               {currentUser.role === 'buyer' ? <ButtonForUpdateRole setIsBecomeSeller={setIsBecomeSeller} /> : null}
             </div>

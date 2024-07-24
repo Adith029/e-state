@@ -12,7 +12,7 @@ import { RiHomeOfficeFill } from "react-icons/ri";
 import { GiIsland } from "react-icons/gi";
 import { CiShop } from "react-icons/ci";
 import ApiRequest from '../lib/ApiRequest';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 function BodyPart3() {
@@ -72,7 +72,7 @@ function BodyPart3() {
                         <p className="focus-description">
                             Over 1 million homes for sale available on the website, we can match you with a house you will want to call home.
                         </p>
-                        <a href="#" className="focus-link">Find A Home →</a>
+                        <Link to={'/properties'} className="focus-link">Find A Home →</Link>
                     </div>
                     <div className="focus-item">
                         <div className="icon"><GiHouse color='#007bff' size={50} /></div>
@@ -80,7 +80,7 @@ function BodyPart3() {
                         <p className="focus-description">
                             Over 1 million homes for sale available on the website, we can match you with a house you will want to call home.
                         </p>
-                        <a href="#" className="focus-link">Find A Home →</a>
+                        <Link to={'/properties'} className="focus-link">Rent A Home →</Link>
                     </div>
                     <div className="focus-item">
                         <div className="icon"><LiaBuildingSolid color='#007bff' size={50} /></div>
@@ -88,7 +88,7 @@ function BodyPart3() {
                         <p className="focus-description">
                             Over 1 million homes for sale available on the website, we can match you with a house you will want to call home.
                         </p>
-                        <a href="#" className="focus-link">Find A Home →</a>
+                        <Link to={'/login'} className="focus-link">Sell A Home →</Link>
                     </div>
                 </section>
 
@@ -96,7 +96,7 @@ function BodyPart3() {
                     <div className="categories-header">
                         <h2 className="categories-title">Featured Categories</h2>
                         <p className="categories-subtitle">Lorem ipsum dolor sit amet</p>
-                        <a href="#" className="categories-link">View All Categories →</a>
+                        <Link to={'/properties'} className="categories-link">View All Categories →</Link>
                     </div>
                     <div className="categories">
                         <div className="category-item">

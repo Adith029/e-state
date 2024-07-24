@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: space-between;
 }
 
 /* Property image */
@@ -17,6 +18,7 @@
   margin-right: 20px;
   width: 300px;
   height: 300px;
+  object-fit: cover;
 }
 
 /* Property details */
@@ -37,12 +39,23 @@
   margin-bottom: 10px;
 }
 
+/* Property rating */
+.property-rating {
+  display: flex;
+  align-items: center;
+}
+
+.property-rating span {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
 /* Buttons */
 .seller-property-buttons {
   display: flex;
-  flex-direction: row; /* Changed to row to align buttons horizontally */
+  flex-direction: row;
   align-items: center;
-  gap: 10px; /* Add gap between buttons */
+  gap: 10px;
 }
 
 .seller-property-buttons .btnn,
@@ -51,6 +64,7 @@
   width: 200px;
   height: 45px;
   margin-bottom: 10px;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .seller-property-buttons .btnn {
@@ -71,9 +85,7 @@
   background-color: white;
 }
 
-.seller-property-buttons .btnn:hover,
-.seller-property-buttons .btnn2:hover,
-.seller-property-buttons .btnn3:hover {
+.seller-property-buttons .btnn:hover {
   background-color: rgba(255, 0, 0, 0.2);
   border-color: white;
   color: white;
@@ -81,21 +93,28 @@
 
 .seller-property-buttons .btnn2:hover {
   background-color: rgba(255, 165, 0, 0.2);
+  border-color: white;
+  color: white;
 }
 
 .seller-property-buttons .btnn3:hover {
   background-color: rgba(0, 128, 0, 0.2);
+  border-color: white;
+  color: white;
 }
 
 /* Media Query for responsiveness */
 @media (max-width: 768px) {
   .seller-property-item {
     flex-direction: column;
+    align-items: center;
     padding: 15px;
   }
 
   .seller-property-img {
     margin-bottom: 15px;
+    width: 100%;
+    height: auto;
   }
 
   .seller-property-details h1 {
@@ -107,8 +126,12 @@
     font-size: 16px;
   }
 
+  .property-rating span {
+    font-size: 14px;
+  }
+
   .seller-property-buttons {
-    flex-direction: column; /* Switch to column on smaller screens */
+    flex-direction: column;
     width: 100%;
   }
 
